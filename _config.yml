@@ -1,0 +1,16 @@
+title: にじいろ保育園
+description: >-
+  rainbow_nursery_school
+
+lang: ja
+timezone: Asia/Tokyo
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+header_pages:
+  - index.md
