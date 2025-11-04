@@ -1,8 +1,5 @@
-@charset "UTF-8";
-/* ブレイクポイント
--------------------------------*/
-/* color
--------------------------------*/
+@use "global" as *;
+
 /* 基本設定
 ------------------------------- */
 *, *:before, *:after {
@@ -13,17 +10,17 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   text-align: justify;
 }
 
 body {
   font-size: 1.6rem;
-  color: #383838;
+  color: $text_color;
 }
 
 a {
-  color: #383838;
+  color: $text_color;
   text-decoration: none;
 }
 
@@ -39,5 +36,3 @@ section {
   width: 100%;
   height: auto;
 }
-
-/*# sourceMappingURL=main.css.map */
