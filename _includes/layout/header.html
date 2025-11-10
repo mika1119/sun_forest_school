@@ -1,0 +1,19 @@
+<header class="header">
+  <a class="header-brand" rel="author" href="{{ "/" | relative_url }}">
+    <img src="{{ "/assets/images/icon.webp" | relative_url }}" class="header-brand__logo" alt="{{ site.title | escape }}のロゴ">
+    <div class="header-brand__name">{{ site.title | escape }}</div>
+  </a>
+
+  <input id="menu-toggle" type="checkbox" />
+  <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+
+  <ul class="menu">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+  </ul>
+</header>

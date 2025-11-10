@@ -1,47 +1,4 @@
-@charset "UTF-8";
-/* ブレイクポイント
--------------------------------*/
-/* color
--------------------------------*/
-/* メディアクエリ
--------------------------------*/
-/* 基本設定
-------------------------------- */
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin: 0;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: "Zen Maru Gothic", "M PLUS Rounded 1c", sans-serif;
-  text-align: justify;
-}
-
-body {
-  font-size: 1.6rem;
-  color: #383838;
-  background-color: #FFFDF8;
-}
-
-a {
-  color: #383838;
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-section {
-  width: 100%;
-  height: auto;
-}
+@use "global" as *;
 
 /* ヘッダー
 ------------------------------- */
@@ -51,26 +8,26 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(90deg, #FFE66D, #D4F2E7);
+  background: linear-gradient(90deg, $yellow, $mint);
   padding: 0.6rem 2%;
 }
 
 .header-brand {
   width: auto;
   height: 100%;
-  color: #8D6E63;
+  color: $brown;
   display: flex;
   align-items: center;
   gap: 0.4rem;
-}
-.header-brand__logo {
-  width: auto;
-  height: 100%;
-}
-.header-brand__name {
-  font-size: clamp(2rem, 3vw, 2.6rem);
-  color: #8D6E63;
-  white-space: nowrap;
+  &__logo {
+    width: auto;
+    height: 100%;
+  }
+  &__name {
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    color: $brown;
+    white-space: nowrap;
+  }
 }
 
 .menu {
@@ -113,12 +70,12 @@ section {
 }
 
 .menu-button::before {
-  content: "";
+  content: '';
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: "";
+  content: '';
   margin-top: 8px;
 }
 
@@ -143,6 +100,7 @@ section {
   .menu {
     position: absolute;
     top: 10vh;
+    // margin-top: 50px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -175,5 +133,3 @@ section {
     border-bottom: 1px solid #444;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
