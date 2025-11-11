@@ -22,3 +22,21 @@
     @content;
   }
 }
+
+/* メニューバー
+-------------------------------*/
+@mixin menu_bar {
+  width: 3rem;
+  height: 0.3rem;
+  display: block;
+  background-color: $brown;
+  border-radius: 0.3rem;
+  position: absolute;
+  transition: all 0.4s;
+}
+
+@mixin menu_item($height, $opacity) {
+  height: $height;
+  opacity: $opacity;
+  transition: all 0.4s;
+}
