@@ -1,0 +1,63 @@
+@use "global" as *;
+
+/* ナビゲーションメニューボタン
+------------------------------- */
+#menu-toggle {
+  display: none;
+  ~ .menu {
+    .menu__item {
+      @include menu_item(0, 0);
+      @include display_md {
+        height: auto;
+        opacity: 1;
+      }
+    }
+  }
+  &:checked {
+    + .menu-button-container {
+      .menu-button {
+        background-color: rgba(255, 255, 255, 0);
+        &::before {
+          transform: rotate(45deg);
+          margin-top: 0px
+        }
+        &::after {
+          transform: rotate(-45deg);
+          margin-top: 0px;
+        }
+      }
+    }
+    ~ .menu {
+      .menu__item {
+        @include menu_item(6rem, 1);
+      }
+    }
+  }
+}
+
+.menu-button-container {
+  width: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include display_md {
+    display: none;
+  }
+}
+
+.menu-button {
+  @include menu_bar;
+  &::before {
+    content: "";
+    margin-top: -8px;
+    @include menu_bar;
+  }
+  &::after {
+    content: "";
+    margin-top: 8px;
+    @include menu_bar;
+  }
+}

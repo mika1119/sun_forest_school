@@ -77,6 +77,8 @@ section {
   white-space: nowrap;
 }
 
+/* ナビゲーションメニューボタン
+------------------------------- */
 #menu-toggle {
   display: none;
 }
@@ -155,6 +157,8 @@ section {
   transition: all 0.4s;
 }
 
+/* ナビゲーションメニュー
+------------------------------- */
 .menu {
   width: 100%;
   height: auto;

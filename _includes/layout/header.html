@@ -4,15 +4,7 @@
     <div class="header-brand__name">{{ site.title | escape }}</div>
   </a>
 
-  <input id="menu-toggle" type="checkbox" />
-  <label class="menu-button-container" for="menu-toggle">
-    <div class="menu-button"></div>
-  </label>
+  {%- include layout/menu_button.html -%}
 
-  <ul class="menu">
-    <li class="menu__item">園について</li>
-    <li class="menu__item">1日の流れ</li>
-    <li class="menu__item">お知らせ</li>
-    <li class="menu__item">見学予約</li>
-  </ul>
+  {%- include layout/menu.html -%}
 </header>
