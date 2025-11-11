@@ -7,6 +7,9 @@
   ~ .menu {
     .menu__item {
       @include menu_item(0, 0);
+      &:last-child {
+          padding: 0;
+        }
       @include display_md {
         height: auto;
         opacity: 1;
@@ -30,6 +33,12 @@
     ~ .menu {
       .menu__item {
         @include menu_item(6rem, 1);
+        &:last-child {
+          padding: 4rem 2rem;
+        } 
+        @include display_md {
+          height: auto;
+        }
       }
     }
   }

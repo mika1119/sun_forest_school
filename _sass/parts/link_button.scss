@@ -1,0 +1,12 @@
+@use "global" as *;
+
+/* リンクボタン
+------------------------------- */
+.link {
+  display: inline-block;
+  color: $white;
+  background-color: $orange;
+  border-radius: 1000px;
+  box-shadow: $shadow;
+  padding: 1.2rem 2.2rem;
+}
