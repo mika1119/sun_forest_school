@@ -54,6 +54,7 @@ section {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(90deg, #FFE66D, #D4F2E7);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   position: fixed;
   padding: 0.6rem 2%;
 }
@@ -157,13 +158,15 @@ section {
 .menu {
   width: 100%;
   height: auto;
+  color: #8D6E63;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   position: absolute;
   inset: 10vh 0 auto 0;
-  color: #8D6E63;
 }
 @media (min-width: 768px) {
   .menu {
     position: initial;
+    box-shadow: none;
     display: flex;
     justify-content: end;
     gap: 3rem;
@@ -173,14 +176,19 @@ section {
   width: 100%;
   color: #8D6E63;
   background-color: #FFFDF8;
+  border-bottom: 1px dashed rgba(141, 110, 99, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.menu__item:last-child {
+  border-bottom: none;
 }
 @media (min-width: 768px) {
   .menu__item {
     width: auto;
     background-color: initial;
+    border-bottom: none;
   }
 }
 

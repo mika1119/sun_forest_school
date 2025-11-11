@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(90deg, $yellow, $mint);
+  box-shadow: $shadow;
   position: fixed;
   padding: 0.6rem 2%;
 }
@@ -94,11 +95,13 @@
 .menu {
   width: 100%;
   height: auto;
+  color: $brown;
+  box-shadow: $shadow;
   position: absolute;
   inset: 10vh 0 auto 0;
-  color: $brown;
   @include display_md {
     position: initial;
+    box-shadow: none;
     display: flex;
     justify-content: end;
     gap: 3rem;
@@ -107,12 +110,17 @@
     width: 100%;
     color: $brown;
     background-color: $bg;
+    border-bottom: 1px dashed rgba($brown, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
+    &:last-child {
+      border-bottom: none;
+    }
     @include display_md {
       width: auto;
       background-color: initial;
+      border-bottom: none;
     }
   }
 }
