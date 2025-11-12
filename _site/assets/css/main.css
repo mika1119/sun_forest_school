@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ブレイクポイント
 -------------------------------*/
 /* color
@@ -42,6 +43,17 @@ li {
 section {
   width: 100%;
   height: auto;
+}
+
+/* フッター
+------------------------------- */
+.footer {
+  width: 100%;
+  height: 8vh;
+  color: #8D6E63;
+  background: linear-gradient(90deg, #D4F2E7, #FFE66D);
+  display: grid;
+  place-content: center;
 }
 
 /* ヘッダー
@@ -242,3 +254,5 @@ section {
 .link:hover {
   background-color: #F49A3D;
 }
+
+/*# sourceMappingURL=main.css.map */

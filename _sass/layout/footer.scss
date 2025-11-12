@@ -1,0 +1,12 @@
+@use "global" as *;
+
+/* フッター
+------------------------------- */
+.footer {
+  width: 100%;
+  height: 8vh;
+  color:$brown;
+  background: linear-gradient(90deg, $mint, $yellow);
+  display: grid;
+  place-content: center;
+}
