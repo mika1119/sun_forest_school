@@ -33,12 +33,15 @@
     ~ .menu {
       .menu__item {
         @include menu_item(6rem, 1);
-        &:last-child {
-          padding: 4rem 2rem;
-        } 
         @include display_md {
           height: auto;
         }
+        &:last-child {
+          padding: 4rem 2rem;
+          @include display_md {
+            padding: 0;
+          }
+        } 
       }
     }
   }

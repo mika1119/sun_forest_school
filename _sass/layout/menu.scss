@@ -39,5 +39,13 @@
     color: $brown;
     display: grid;
     place-content: center;
+    transition: all 0.4s;
+    &:hover {
+      background-color: rgba($yellow, 0.2);
+      @include display_md {
+        color: $orange;
+        background-color: transparent;
+      }
+    }
   }
 }

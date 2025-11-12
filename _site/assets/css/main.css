@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ブレイクポイント
 -------------------------------*/
 /* color
@@ -112,12 +111,17 @@ section {
   opacity: 1;
   transition: all 0.4s;
 }
+@media (min-width: 768px) {
+  #menu-toggle:checked ~ .menu .menu__item {
+    height: auto;
+  }
+}
 #menu-toggle:checked ~ .menu .menu__item:last-child {
   padding: 4rem 2rem;
 }
 @media (min-width: 768px) {
-  #menu-toggle:checked ~ .menu .menu__item {
-    height: auto;
+  #menu-toggle:checked ~ .menu .menu__item:last-child {
+    padding: 0;
   }
 }
 
@@ -212,6 +216,16 @@ section {
   color: #8D6E63;
   display: grid;
   place-content: center;
+  transition: all 0.4s;
+}
+.menu__link:hover {
+  background-color: rgba(255, 230, 109, 0.2);
+}
+@media (min-width: 768px) {
+  .menu__link:hover {
+    color: #F8B26A;
+    background-color: transparent;
+  }
 }
 
 /* リンクボタン
@@ -222,7 +236,9 @@ section {
   background-color: #F8B26A;
   border-radius: 1000px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s;
   padding: 1.2rem 2.2rem;
 }
-
-/*# sourceMappingURL=main.css.map */
+.link:hover {
+  background-color: #F49A3D;
+}

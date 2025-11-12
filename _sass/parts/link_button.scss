@@ -8,5 +8,9 @@
   background-color: $orange;
   border-radius: 1000px;
   box-shadow: $shadow;
+  transition: all 0.4s;
   padding: 1.2rem 2.2rem;
+  &:hover {
+    background-color: $dark_orange;
+  }
 }
