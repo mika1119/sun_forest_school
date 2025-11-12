@@ -20,6 +20,12 @@ body {
   background-color: $bg;
 }
 
+main {
+  width: 100%;
+  height: auto;
+  padding: 10vh 0;
+}
+
 a {
   color: $text_color;
   text-decoration: none;
@@ -36,4 +42,9 @@ li {
 section {
   width: 100%;
   height: auto;
+}
+
+.home {
+  display: grid;
+  gap: 6rem;
 }

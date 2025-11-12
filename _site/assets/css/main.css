@@ -27,6 +27,12 @@ body {
   background-color: #FFFDF8;
 }
 
+main {
+  width: 100%;
+  height: auto;
+  padding: 10vh 0;
+}
+
 a {
   color: #383838;
   text-decoration: none;
@@ -43,6 +49,11 @@ li {
 section {
   width: 100%;
   height: auto;
+}
+
+.home {
+  display: grid;
+  gap: 6rem;
 }
 
 /* フッター
@@ -261,9 +272,10 @@ section {
 .title {
   width: 100%;
   height: auto;
+  padding: 0 0 2rem 0;
 }
 .title__text {
-  font-size: clamp(2.4rem, 3vw, 3rem);
+  font-size: clamp(2.4rem, 3vw, 2.6rem);
   font-weight: 600;
   text-align: center;
   color: #F49A3D;
