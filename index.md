@@ -1,14 +1,13 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: home
+title: HOME
 ---
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-contents
+{% include parts/title.html title="園の特徴" %}
+
+<br><br><br><br><br><br><br><br>

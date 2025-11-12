@@ -255,4 +255,17 @@ section {
   background-color: #F49A3D;
 }
 
+/* タイトル
+------------------------------- */
+.title {
+  width: 100%;
+  height: auto;
+}
+.title__text {
+  font-size: clamp(2.4rem, 3vw, 3rem);
+  font-weight: 600;
+  text-align: center;
+  color: #F49A3D;
+}
+
 /*# sourceMappingURL=main.css.map */
