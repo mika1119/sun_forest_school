@@ -14,7 +14,7 @@ title: HOME
 
 <section>
   {% include parts/title.html title="1日の流れ" %}
-  {% include parts/time_table.html %}
+  {% include sections/time_table.html %}
 </section>
 
 <section>
