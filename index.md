@@ -3,9 +3,6 @@ layout: home
 title: HOME
 ---
 
-<section>
-  <div style="height: 90vh;"></div>
-</section>
 
 <section>
   {% include parts/title.html title="園の特徴" %}
@@ -17,6 +14,7 @@ title: HOME
 
 <section>
   {% include parts/title.html title="1日の流れ" %}
+  {% include parts/time_table.html %}
 </section>
 
 <section>

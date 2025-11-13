@@ -49,6 +49,7 @@ li {
 section {
   width: 100%;
   height: auto;
+  padding: 0 4%;
 }
 
 .home {
@@ -265,6 +266,38 @@ section {
 }
 .link:hover {
   background-color: #F49A3D;
+}
+
+/* 1日の流れ
+------------------------------- */
+.time-table {
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.time-table__th {
+  text-align: center;
+  color: #8D6E63;
+  background-color: #FFE66D;
+  padding: 1rem 2rem;
+}
+.time-table__tr {
+  border-bottom: 1px solid rgba(141, 110, 99, 0.2);
+}
+.time-table__tr:last-child {
+  border-bottom: none;
+}
+.time-table__time {
+  width: 30%;
+  height: auto;
+  text-align: center;
+  padding: 1rem 2rem;
 }
 
 /* タイトル
