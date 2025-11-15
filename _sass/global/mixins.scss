@@ -7,20 +7,22 @@
     @content;
   }
 }
+
 @mixin display_md {
   @media (min-width: $md) {
     @content;
   }
 }
+
 @mixin display_lg {
   @media (min-width: $lg) {
     @content;
   }
 }
-@mixin display_xl {
-  @media (min-width: $xl) {
-    @content;
-  }
+
+@mixin max_width {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* メニューバー

@@ -10,6 +10,7 @@ title: HOME
 
 <section>
   {% include parts/title.html title="クラス紹介" %}
+  {% include sections/card.html %}
 </section>
 
 <section>

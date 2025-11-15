@@ -1,0 +1,49 @@
+@use "global" as *;
+
+/* カード
+------------------------------- */
+.cards {
+  display: grid;
+  gap: 2rem;
+  @include display_sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include display_lg {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+  }
+  @include max_width;
+}
+
+.card {
+  background-color: $white;
+  border: 0.6rem solid transparent;
+  border-radius: 1.6rem;
+  box-shadow: $shadow;
+  overflow: hidden;
+  &:nth-child(1) {
+    border-color: $yellow;
+  }
+  &:nth-child(2) {
+    border-color: $green;
+  }
+  &:nth-child(3) {
+    border-color: $orange;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  &__body {
+    display: grid;
+    gap: 1rem;
+    padding: 1.6rem;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $brown;
+  }
+}
+
