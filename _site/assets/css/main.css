@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ブレイクポイント
 -------------------------------*/
 /* color
@@ -336,6 +337,72 @@ section {
   color: #8D6E63;
 }
 
+/* メインビジュアル
+------------------------------- */
+.mv {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+.mv__image {
+  position: absolute;
+  inset: 0;
+  border-radius: 4rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeAnime 16s infinite;
+  margin: 3rem;
+}
+@media (min-width: 768px) {
+  .mv__image {
+    margin: 6rem;
+  }
+}
+.mv__image:nth-child(1) {
+  animation-delay: 0s;
+}
+.mv__image:nth-child(2) {
+  background-position: 20%;
+  animation-delay: 4s;
+}
+@media (min-width: 768px) {
+  .mv__image:nth-child(2) {
+    background-position: center;
+  }
+}
+.mv__image:nth-child(3) {
+  background-position: 30%;
+  animation-delay: 8s;
+}
+@media (min-width: 768px) {
+  .mv__image:nth-child(3) {
+    background-position: center;
+  }
+}
+.mv__image:nth-child(4) {
+  animation-delay: 12s;
+}
+
+@keyframes fadeAnime {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* パネル
 ------------------------------- */
 .panel {
@@ -452,3 +519,5 @@ section {
   text-align: center;
   padding: 1rem 2rem;
 }
+
+/*# sourceMappingURL=main.css.map */
