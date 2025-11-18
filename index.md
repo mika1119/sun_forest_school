@@ -6,6 +6,7 @@ title: HOME
 
 <section>
   {% include parts/title.html title="園の特徴" %}
+  {% include sections/panel.html %}
 </section>
 
 <section>

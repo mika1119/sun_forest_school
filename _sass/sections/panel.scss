@@ -1,0 +1,71 @@
+@use "global" as *;
+
+/* パネル
+------------------------------- */
+.panel {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 4rem;
+  @include display_sm {
+    gap: 0;
+  }
+  @include display_lg {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+  }
+  @include max_width;
+}
+
+.panel-item {
+  width: 100%;
+  height: auto;
+  @include display_sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  @include display_lg {
+    display: block;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    mask-image: url("../images/mask.png");
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: auto 100%;
+    -webkit-mask-image: url("../images/mask.png");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    -webkit-mask-size: 100% 100%;
+  }
+  &:nth-child(even) &__image {
+    transform: scaleX(-1);
+    order: 2;
+  }
+  &__body {
+    display: grid;
+    gap: 1rem;
+    padding: 1.6rem 0 0 0;
+    @include display_sm {
+      padding: 0 0 0 2.4rem;
+    }
+    @include display_lg {
+      padding: 1.6rem 0 0 0;
+    }
+  }
+  &:nth-child(even) &__body {
+    padding: 0 2.4rem 0 0;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $brown;
+  }
+  &__text {
+    font-size: 1.4rem;
+  }
+}
