@@ -28,4 +28,5 @@ images:
 
 <section>
   {% include parts/title.html title="お知らせ" %}
+  {% include parts/info_box.html %}
 </section>

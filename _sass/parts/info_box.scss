@@ -1,0 +1,42 @@
+@use "global" as *;
+
+/* ボックス
+------------------------------- */
+.info-box-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info-box {
+  width: 100%;
+  max-width: 58rem;
+  height: auto;
+  background-color: $mint;
+  border: 0.6rem solid $mint;
+  border-radius: 1.6rem;
+  box-shadow: $shadow;
+  overflow: hidden;
+  @include display_md {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    place-items: center;
+  }
+  &__left {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: color-mix(in oklab, $green, black 40%);
+    padding: 1rem 2rem;
+  }
+  &__right {
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+  }
+}
