@@ -312,6 +312,46 @@ section {
   background-color: #F49A3D;
 }
 
+/* タブ
+------------------------------- */
+.tab {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 4%;
+}
+.tab__label {
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #008080;
+  flex: 1 1;
+  order: -1;
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 0.6em 1em;
+}
+.tab__label:hover {
+  opacity: 0.8;
+}
+.tab__label:has(:checked) {
+  opacity: 1;
+}
+.tab__label:has(:checked) + .tab__content {
+  display: block;
+}
+.tab__input {
+  display: none;
+}
+.tab__content {
+  width: 100%;
+  height: auto;
+  background-color: #ffffe0;
+  display: none;
+  padding: 1.5em 1em;
+}
+
 /* タイトル
 ------------------------------- */
 .title {
@@ -533,34 +573,5 @@ section {
 
 /* 1日の流れ
 ------------------------------- */
-.time-table {
-  width: 100%;
-  max-width: 48rem;
-  height: auto;
-  background: #FFFFFF;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  border-radius: 1rem;
-  border-collapse: collapse;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.time-table__th {
-  text-align: center;
-  color: #8D6E63;
-  background-color: #FFE66D;
-  padding: 1rem 2rem;
-}
-.time-table__tr {
-  border-bottom: 1px solid rgba(141, 110, 99, 0.2);
-}
-.time-table__tr:last-child {
-  border-bottom: none;
-}
-.time-table__time {
-  width: 30%;
-  height: auto;
-  text-align: center;
-  padding: 1rem 2rem;
-}
 
 /*# sourceMappingURL=main.css.map */
