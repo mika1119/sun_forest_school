@@ -7,22 +7,31 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 0 4%;
+  gap: 0 2%;
+  @include display_md {
+    gap: 0 4%;
+  }
   &__label {
-    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    width: 100%;
+    height: 5rem;
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-weight: 700;
     text-align: center;
-    color: $white;
-    background-color: #008080;
+    color: $brown;
+    border: 0.6rem solid var(--color);
+    border-bottom: $white;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1 1;
     order: -1;
-    opacity: 0.5;
     cursor: pointer;
-    padding: .6em 1em;
     &:hover {
-      opacity: 0.8;
+      background-color: color-mix(in oklab, var(--color), white 70%);
     }
     &:has(:checked) {
-      opacity: 1;
+      background-color: var(--color);
       + .tab__content {
         display: block;
       }
@@ -34,8 +43,12 @@
   &__content {
     width: 100%;
     height: auto;
-    background-color: #ffffe0;
+    border: 0.6rem solid var(--color);
+    border-radius: 0 0 2rem 2rem;
     display: none;
     padding: 1.5em 1em;
+    @include display_md {
+      padding: 1.5em 3em;
+    }
   }
 }

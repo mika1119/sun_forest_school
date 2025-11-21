@@ -7,6 +7,14 @@ images:
   - url: "/assets/images/mv_02.webp"
   - url: "/assets/images/mv_03.webp"
   - url: "/assets/images/mv_04.webp"
+
+tabs:
+  - title: "こもれび組"
+    color: "#FFE66D"
+  - title: "そよかぜ組"
+    color: "#A8D5BA"
+  - title: "たいよう組"
+    color: "#F8B26A"
 ---
 
 {% include sections/mv.html %}
@@ -23,7 +31,7 @@ images:
 
 <section>
   {% include parts/title.html title="1日の流れ" %}
-  {% include sections/time_table.html %}
+  {% include parts/tab.html %}
 </section>
 
 <section>

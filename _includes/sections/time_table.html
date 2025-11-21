@@ -1,1 +1,7 @@
-{% include parts/tab.html %}
+{% if tab.title == "こもれび組" %}
+  こもれび
+{% elsif tab.title == "そよかぜ組" %}
+  そよかぜ
+{% elsif tab.title == "たいよう組" %}
+  たいよう
+{% endif %}
