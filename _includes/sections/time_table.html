@@ -1,46 +1,22 @@
-{% if tab.title == "こもれび組" %}
-  <div class="time-table">
+{% assign key = page.map[tab.title] %}
+
+<div class="time-table">
+  {% for item in site.data.time_table[key] %}
     <div class="time-table-item">
-      <div class="time-table-item__time">8:00</div>
+      <div class="time-table-item__time">{{ item.time }}</div>
 
       <div class="time-table-contents">
-        <div class="time-table-contents__title">登園</div>
-        <img src="/assets/images/feature_02.webp" class="time-table-contents__image" alt="">
+        <div class="time-table-contents__title">{{ item.title }}</div>
+
+        {% if item.image %}
+          <img src="{{ item.image | relative_url }}" class="time-table-contents__image" alt="">
+        {% endif %}
+
+        {% if item.text %}
+          <div class="time-table-contents__text">{{ item.text | newline_to_br }}</div>
+        {% endif %}
       </div>
     </div>
-    
+  {% endfor %}
+</div>
 
-    <div class="time-table-item">
-      <div class="time-table-item__time">9:30</div>
-
-      <div class="time-table-contents">
-        <div class="time-table-contents__title">朝の会</div>
-        <span>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</span>
-      </div>
-    </div>
-
-    <div class="time-table-item">
-      <div class="time-table-item__time">10:00</div>
-
-      <div class="time-table-contents">
-        <div class="time-table-contents__title">自由遊び</div>
-        <img src="/assets/images/feature_02.webp" class="time-table-contents__image" alt="">
-
-        <div>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</div>
-      </div>
-    </div>
-
-    <div class="time-table-item">
-      <div class="time-table-item__time">12:00</div>
-
-      <div class="time-table-contents">
-        <div class="time-table-contents__title">給食</div>
-        <img src="/assets/images/feature_02.webp" class="time-table-contents__image" alt="">
-      </div>
-    </div>
-  </div>
-{% elsif tab.title == "そよかぜ組" %}
-  そよかぜ
-{% elsif tab.title == "たいよう組" %}
-  たいよう
-{% endif %}

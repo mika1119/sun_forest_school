@@ -15,6 +15,11 @@ tabs:
     color: "#A8D5BA"
   - title: "たいよう組"
     color: "#F8B26A"
+
+map:
+  こもれび組: komorebi
+  そよかぜ組: soyokaze
+  たいよう組: taiyou
 ---
 
 {% include sections/mv.html %}
