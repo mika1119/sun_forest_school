@@ -13,13 +13,13 @@
 
 .info-box {
   width: 100%;
-  max-width: 58rem;
   height: auto;
   background-color: $mint;
   border: 0.6rem solid $mint;
   border-radius: 1.6rem;
   box-shadow: $shadow;
   overflow: hidden;
+  @include max-width;
   @include display_md {
     display: grid;
     grid-template-columns: 20% 1fr;

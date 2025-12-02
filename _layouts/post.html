@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="post__header">
+    
+
+    {% if page.site_url %}
+      <div class="link">
+        <a href="{{ page.site_url | relative_url }}" class="link__button" target="_blank" rel="noopener">サイトを見る</a>
+      </div>
+    {% endif %}
+  </div>
+</article>
