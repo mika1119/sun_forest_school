@@ -10,5 +10,17 @@
         </div>
       </div>
     {% endfor %}
+  {% else %}
+    {% for post in site.posts %}
+      <div class="card">
+        <img src="{{ post.thumbnail | relative_url }}" class="card__image" alt="{{ post.title }}">
+
+        <div class="card__body">
+          <div class="card__title">{{ post.title }}</div>
+          <div class="card__text">{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</div>
+          <div class="card__date">{{ post.date | date: "%Y-%m-%d" }}</div>
+        </div>
+      </div>
+    {% endfor %}
   {% endif %}
 </div>

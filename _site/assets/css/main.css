@@ -423,7 +423,6 @@ section {
   border: 0.6rem solid transparent;
   border-radius: 1.6rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
 }
 .card:nth-child(3n+1) {
   border-color: #FFE66D;
@@ -441,8 +440,9 @@ section {
 }
 .card__image {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 .card__body {
   width: 100%;
@@ -460,7 +460,7 @@ section {
 .card__text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   overflow: hidden;
 }
 .card__date {
