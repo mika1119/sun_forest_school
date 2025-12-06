@@ -620,21 +620,39 @@ section {
 
 /* お知らせ
 ------------------------------- */
-.news-wrap {
+.post {
+  width: 100%;
+  max-width: 78rem;
+  height: auto;
+  display: grid;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 4rem 0 0 0;
+}
+
+.post-header {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: end;
+}
+.post-header__title {
+  font-size: clamp(2.2rem, 3vw, 2.6rem);
+  color: #8D6E63;
 }
 
-.news {
+.post-content p + p {
+  padding: 1.6rem 0 0 0;
+}
+.post-content img {
   width: 100%;
-  height: auto;
-  padding: 6rem 0;
-  max-width: 1100px;
-  margin: 0 auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.post-content a {
+  display: block;
+  text-align: center;
 }
 
 /* 1日の流れ
