@@ -1,0 +1,19 @@
+@use "global" as *;
+
+/* お知らせ
+------------------------------- */
+.news-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.news {
+  width: 100%;
+  height: auto;
+  padding: 6rem 0;
+  @include max_width;
+}

@@ -8,6 +8,17 @@ images:
   - url: "/assets/images/mv_03.webp"
   - url: "/assets/images/mv_04.webp"
 
+cards:
+  - image: "/assets/images/class_01.webp"
+    title: "こもれび組（0〜1歳）"
+    text: "安心して過ごせる空間で、ゆっくりと成長を見守ります。"
+  - image: "/assets/images/class_02.webp"
+    title: "そよかぜ組（2〜3歳）"
+    text: "好奇心を大切に、友だちと一緒に遊びながら学びます。"
+  - image: "/assets/images/class_03.webp"
+    title: "たいよう組（4〜5歳）"
+    text: "協力・自立を育みながら、就学に向けた準備をします。"
+
 tabs:
   - title: "こもれび組"
     color: "#FFE66D"

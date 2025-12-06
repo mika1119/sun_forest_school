@@ -3,9 +3,11 @@
     <div class="info-box__left">最新情報</div>
     
     <div class="info-box__right">
-      <div>2025.11.18　園児募集のお知らせ</div>
-      <div>2025.10.25　来月の献立</div>
-      <div>2025.9.12　秋祭りのお知らせ</div>
+      {% for post in site.posts limit:8 %}
+        <a href="{{ post.url | relative_url }}">
+          <div>{{post.date | date: "%Y-%m-%d" }}　{{ post.title}}</div>
+        </a>
+      {% endfor %}
     </div>
   </div>
 
