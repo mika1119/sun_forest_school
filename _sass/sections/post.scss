@@ -2,6 +2,22 @@
 
 /* お知らせ
 ------------------------------- */
+.news-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.news {
+  width: 100%;
+  height: auto;
+  padding: 6rem 0;
+  @include max_width;
+}
+
 .post {
   width: 100%;
   max-width: 78rem;
@@ -9,7 +25,10 @@
   display: grid;
   gap: 2rem;
   margin: 0 auto;
-  padding: 4rem 0 0 0;
+  padding: 4rem 0;
+  &__link {
+    text-align: center;
+  }
 }
 
 .post-header {
