@@ -297,6 +297,9 @@ section {
   gap: 1rem;
   padding: 2rem;
 }
+.info-box__link:hover {
+  color: #F49A3D;
+}
 
 /* リンクボタン
 ------------------------------- */

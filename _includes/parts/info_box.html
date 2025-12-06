@@ -4,7 +4,7 @@
     
     <div class="info-box__right">
       {% for post in site.posts limit:8 %}
-        <a href="{{ post.url | relative_url }}">
+        <a href="{{ post.url | relative_url }}" class="info-box__link">
           <div>{{post.date | date: "%Y-%m-%d" }}　{{ post.title}}</div>
         </a>
       {% endfor %}
