@@ -665,7 +665,8 @@ section {
 }
 
 .post-content p + p {
-  padding: 1.6rem 0 0 0;
+  line-height: 3rem;
+  padding: 2.6rem 0 0 0;
 }
 .post-content img {
   width: 100%;
