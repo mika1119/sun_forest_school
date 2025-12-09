@@ -1,0 +1,49 @@
+@use "global" as *;
+
+/* 装飾
+------------------------------- */
+.decoration {
+  position: absolute;
+  z-index: 100;
+  &__flag {
+    width: 18rem;
+    height: 8rem;
+    object-fit: cover;
+    top: 0;
+    &_right {
+      right: 0;
+    }
+    &_left {
+      left: 0;
+      transform: scale(-1, 1)
+    }
+  }
+}
+
+
+.swing {
+  animation: swing 1.8s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%   {
+    transform: rotate(3deg);
+  }
+  50%  {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
