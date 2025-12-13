@@ -436,6 +436,9 @@ section {
 .title {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 0 2rem 0;
 }
 .title__text {
@@ -443,6 +446,17 @@ section {
   font-weight: 600;
   text-align: center;
   color: #F49A3D;
+  padding: 0 1rem;
+}
+.title::before, .title::after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 3rem;
+  background-image: url("../images/dots.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* カード
