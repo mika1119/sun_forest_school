@@ -263,7 +263,7 @@ section {
   z-index: 100;
 }
 .decoration__flag {
-  width: 18rem;
+  width: 16rem;
   height: 8rem;
   object-fit: cover;
   top: 0;
@@ -275,35 +275,70 @@ section {
   left: 0;
   transform: scale(-1, 1);
 }
-
-.swing {
-  animation: swing 1.8s ease-in-out infinite;
+@media (min-width: 768px) {
+  .decoration__flag {
+    width: 18rem;
+  }
+}
+.decoration__flower {
+  display: none;
+}
+@media (min-width: 768px) {
+  .decoration__flower {
+    width: 14rem;
+    height: auto;
+    display: block;
+    bottom: 0;
+    left: 0;
+    animation: swing 1s ease-in-out infinite;
+  }
+}
+.decoration__tree {
+  display: none;
+  transform-origin: bottom center;
+}
+@media (min-width: 768px) {
+  .decoration__tree_orange {
+    width: 14rem;
+    height: auto;
+    display: block;
+    bottom: 0;
+    right: 5.2rem;
+    animation: stretch 4s ease-in-out infinite;
+  }
+}
+@media (min-width: 768px) {
+  .decoration__tree_green {
+    width: 14rem;
+    height: auto;
+    display: block;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    animation: stretch 2.6s ease-in-out infinite;
+  }
 }
 
 @keyframes swing {
   0% {
-    transform: rotate(3deg);
+    transform: rotate(6deg);
   }
   50% {
-    transform: rotate(-3deg);
+    transform: rotate(-6deg);
   }
   100% {
-    transform: rotate(3deg);
+    transform: rotate(6deg);
   }
 }
-.float {
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
+@keyframes stretch {
   0% {
-    transform: translateY(0);
+    transform: scaleY(1);
   }
   50% {
-    transform: translateY(-10px);
+    transform: scaleY(1.1);
   }
   100% {
-    transform: translateY(0);
+    transform: scaleY(1);
   }
 }
 /* ボックス
