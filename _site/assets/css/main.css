@@ -259,12 +259,41 @@ section {
 /* 装飾
 ------------------------------- */
 .decoration {
+  display: none;
   position: absolute;
   z-index: 100;
+}
+@media (min-width: 768px) {
+  .decoration {
+    display: block;
+  }
+}
+.decoration__cloud {
+  width: 20rem;
+  height: auto;
+  top: 2rem;
+  right: 0;
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.2));
+  animation: float 2s ease-in-out infinite;
+}
+.decoration__flower_orange {
+  width: 18rem;
+  height: auto;
+  bottom: -3rem;
+  left: 2.6rem;
+  animation: swing 2s ease-in-out infinite;
+}
+.decoration__flower_pink {
+  width: 12rem;
+  height: auto;
+  bottom: 3rem;
+  left: -1rem;
+  animation: swing 4s ease-in-out infinite;
 }
 .decoration__flag {
   width: 16rem;
   height: 8rem;
+  display: block;
   object-fit: cover;
   top: 0;
 }
@@ -277,48 +306,46 @@ section {
 }
 @media (min-width: 768px) {
   .decoration__flag {
-    width: 18rem;
+    width: 22rem;
+    height: 10rem;
   }
 }
-.decoration__flower {
-  display: none;
-}
-@media (min-width: 768px) {
-  .decoration__flower {
-    width: 14rem;
-    height: auto;
-    display: block;
-    bottom: 0;
-    left: 0;
-    animation: swing 1s ease-in-out infinite;
-  }
+.decoration__bird {
+  width: 12rem;
+  height: auto;
+  bottom: 9rem;
+  right: 12rem;
+  transform: scale(-1, 1);
 }
 .decoration__tree {
-  display: none;
   transform-origin: bottom center;
 }
-@media (min-width: 768px) {
-  .decoration__tree_orange {
-    width: 14rem;
-    height: auto;
-    display: block;
-    bottom: 0;
-    right: 5.2rem;
-    animation: stretch 4s ease-in-out infinite;
-  }
+.decoration__tree_orange {
+  width: 14rem;
+  height: auto;
+  bottom: 0;
+  right: 5rem;
+  animation: stretch 4s ease-in-out infinite;
 }
-@media (min-width: 768px) {
-  .decoration__tree_green {
-    width: 14rem;
-    height: auto;
-    display: block;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    animation: stretch 2.6s ease-in-out infinite;
-  }
+.decoration__tree_green {
+  width: 14rem;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  animation: stretch 2.6s ease-in-out infinite;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes swing {
   0% {
     transform: rotate(6deg);
