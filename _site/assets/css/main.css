@@ -276,6 +276,12 @@ section {
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.2));
   animation: float 2s ease-in-out infinite;
 }
+.decoration__cloud_sm {
+  width: 14rem;
+  top: 10rem;
+  right: -2rem;
+  animation: float 4s ease-in-out infinite;
+}
 .decoration__flag {
   width: 16rem;
   height: 8rem;
@@ -330,17 +336,6 @@ section {
   }
   100% {
     transform: translateY(0);
-  }
-}
-@keyframes swing {
-  0% {
-    transform: rotate(6deg);
-  }
-  50% {
-    transform: rotate(-6deg);
-  }
-  100% {
-    transform: rotate(6deg);
   }
 }
 @keyframes stretch {
