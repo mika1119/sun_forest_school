@@ -17,22 +17,6 @@
     filter: drop-shadow(0 6px 20px rgba(0,0, 0, 0.2));
     animation: float 2s ease-in-out infinite;
   }
-  &__flower {
-    &_orange {
-      width: 18rem;
-      height: auto;
-      bottom: -3rem;
-      left: 2.6rem;
-      animation: swing 2s ease-in-out infinite;
-    }
-    &_pink {
-      width: 12rem;
-      height: auto;
-      bottom: 3rem;
-      left: -1rem;
-      animation: swing 4s ease-in-out infinite;
-    }
-  }
   &__flag {
     width: 16rem;
     height: 8rem;
@@ -86,18 +70,6 @@
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-@keyframes swing {
-  0%   {
-    transform: rotate(6deg);
-  }
-  50%  {
-    transform: rotate(-6deg);
-  }
-  100% {
-    transform: rotate(6deg);
   }
 }
 

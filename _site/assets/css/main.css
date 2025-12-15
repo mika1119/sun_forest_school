@@ -276,20 +276,6 @@ section {
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.2));
   animation: float 2s ease-in-out infinite;
 }
-.decoration__flower_orange {
-  width: 18rem;
-  height: auto;
-  bottom: -3rem;
-  left: 2.6rem;
-  animation: swing 2s ease-in-out infinite;
-}
-.decoration__flower_pink {
-  width: 12rem;
-  height: auto;
-  bottom: 3rem;
-  left: -1rem;
-  animation: swing 4s ease-in-out infinite;
-}
 .decoration__flag {
   width: 16rem;
   height: 8rem;
