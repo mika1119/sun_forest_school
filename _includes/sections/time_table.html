@@ -9,11 +9,11 @@
         <div class="time-table-contents__title">{{ item.title }}</div>
 
         {% if item.image %}
-          <img src="{{ item.image | relative_url }}" class="time-table-contents__image" alt="">
+          <img src="{{ item.image | relative_url }}" class="time-table-contents__image" data-aos="fade-up" alt="">
         {% endif %}
 
         {% if item.text %}
-          <div class="time-table-contents__text">{{ item.text | newline_to_br }}</div>
+          <div class="time-table-contents__text" data-aos="fade-up">{{ item.text | newline_to_br }}</div>
         {% endif %}
       </div>
     </div>
