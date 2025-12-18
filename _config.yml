@@ -10,7 +10,6 @@ url: "https://mika1119.github.io" # the base hostname & protocol for your site, 
 baseurl: "/sun_forest_school/" # the subpath of your site, e.g. /blog
 
 plugins:
-  - jekyll-seo-tag
   - jekyll-feed
 
 header_pages:
