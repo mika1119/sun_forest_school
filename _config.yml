@@ -7,7 +7,7 @@ lang: ja
 timezone: Asia/Tokyo
 
 url: "https://mika1119.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/sun_forest_school/" # the subpath of your site, e.g. /blog
+baseurl: "/sun_forest_school" # the subpath of your site, e.g. /blog
 
 plugins:
   - jekyll-feed
